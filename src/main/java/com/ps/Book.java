@@ -8,12 +8,12 @@ public class Book {
     private boolean isCheckedOut;
     private String checkedOutTo;
 
-    public Book(int id, String isbn, String title, boolean isCheckedOut, String checkedOutTo) {
+    public Book(int id, String isbn, String title) {
         this.id = id;
         this.isbn = isbn;
         this.title = title;
-        this.isCheckedOut = isCheckedOut;
-        this.checkedOutTo = checkedOutTo;
+       // this.isCheckedOut = false;
+        //this.checkedOutTo = checkedOutTo;
     }
 
     public int getId() {
