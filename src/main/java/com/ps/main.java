@@ -50,8 +50,39 @@ public class main {
         inventory[18] = book19;
         inventory[19] = book20;
 
+        int mainMenuCommand = 4;
 
-        }
+        do {
+            System.out.println("Store Home Screen");
+            System.out.println("1-Available Books");
+            System.out.println("2-Checked Out Books");
+            System.out.println("4-Checked In a Book");
+            System.out.println("-Exit");
+
+            System.out.print("Select Option");
+
+            mainMenuCommand = scanner.nextInt();
+
+            switch(mainMenuCommand) {
+                case 1:
+                    break:listAllAvailablebooks
+                case 2:
+                    break:listCheckedOutbooks
+                case 3:
+                    :break: checkInAbook
+                case 4:
+                    break: Exit
+                default:
+                    System.out.println("Incorrect selection. Try again!");
+            }
+        } while(mainMenuCommand != 4);
+
     }
+    public static void listAllAvailablebooks(){}
+    public static void listCheckedOutbooks(){}
+    public static void checkInAbook(){}
+    public static void Exit(){}
+
+
 
 }
